@@ -1,5 +1,4 @@
 #!/bin/sh
-
 # Set the timezone. Base image does not contain the setup-timezone script, so an alternate way is used.
 if [ "$CONTAINER_TIMEZONE" ]; then
     cp /usr/share/zoneinfo/${CONTAINER_TIMEZONE} /etc/localtime && \
