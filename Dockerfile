@@ -51,6 +51,7 @@ RUN apk add \
 
 # Problems installing in above stack
 RUN apk add php7-simplexml
+RUN apk add composer
 
 RUN cp /usr/bin/php7 /usr/bin/php \
     && rm -f /var/cache/apk/*
